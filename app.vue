@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <div class="wrapper">
-      <h1>evoize<span class="dot">.</span>me</h1>
-      <h2>Open-source invoicing & bill pay for freelancers.</h2>
-    </div>
-  </div>
+	<div>
+		<NuxtRouteAnnouncer />
+		<div class="wrapper">
+			<h1>evoize<span class="dot">.</span>me</h1>
+			<h2>Open-source invoicing & bill pay for freelancers.</h2>
+		</div>
+	</div>
 </template>
 
 <style scoped>
@@ -15,13 +15,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
+  from { top: 20%; opacity: 0; }
+  to { opacity: 1; }
 }
 
 @-webkit-keyframes fadeIn {
-  from {top: 20%; opacity: 0;}
-  to {top: 100; opacity: 1;}
+  from { top: 20%; opacity: 0; }
+  to { opacity: 1; }
 }
 
 .wrapper {
@@ -54,4 +54,3 @@ h2 {
   color: #f59e0b;
 }
 </style>
-
