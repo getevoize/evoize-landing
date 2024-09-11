@@ -1,56 +1,46 @@
 <template>
-	<div>
-		<NuxtRouteAnnouncer />
-		<div class="wrapper">
-			<h1>evoize<span class="dot">.</span>me</h1>
-			<h2>Open-source invoicing & bill pay for freelancers.</h2>
-		</div>
-	</div>
+  <div>
+    <nav
+        class="shadow-xl sticky top-7 px-5 py-4 border-2 border-white max-w-xl mx-auto rounded-full from-[#E5F5FF] to-[#FFFFFF] bg-gradient-to-t">
+      <p class="font-bold text-lg text-black leading-none">evoize</p>
+    </nav>
+
+    <header class="flex flex-col min-h-[500px] px-8">
+      <div class="flex-1 bg-blue-50 rounded-lg">
+        <div class="mt-20 max-w-2xl mx-auto">
+          <h1 class="text-center text-blue-500 font-semibold text-5xl">Offen, sicher, deins: Open-Source Invocing für
+            deine finanzielle
+            Zukunft.</h1>
+
+          <div class="mt-10">
+            <form>
+              <div class="mx-auto flex max-w-sm items-center rounded-full bg-gray-50 justify-between px-4 py-2 gap-2">
+                <input type="email" class="flex-1 px-3 py-2" placeholder="E-Mail Address">
+                <button type="submit"
+                        class="bg-[#2A2A2A] border-2 border-black shadow text-white rounded-full px-2 py-1">Join
+                  Waitlist
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="min-h-[2000px] bg-gradient-to-b from-[#FFFF] to-[#DBF1FE]">
+
+      <section class="max-w-7xl mx-auto">
+        <h2 class="mt-20 text-xl font-bold text-blue-600 max-w-md">
+          Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
+        </h2>
+      </section>
+
+    </div>
+
+
+  </div>
 </template>
 
-<style scoped>
-body {
-  background: #00091B;
-  color: #fff;
-}
-
-@keyframes fadeIn {
-  from { top: 20%; opacity: 0; }
-  to { opacity: 1; }
-}
-
-@-webkit-keyframes fadeIn {
-  from { top: 20%; opacity: 0; }
-  to { opacity: 1; }
-}
-
-.wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  animation: fadeIn 1000ms ease;
-  -webkit-animation: fadeIn 1000ms ease;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 25px;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 0;
-  line-height: 1;
-  font-weight: 500;
-}
-
-.dot {
-  color: #f59e0b;
-}
-</style>
+<script setup lang="ts">
+</script>
