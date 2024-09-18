@@ -38,6 +38,13 @@ Start the development server on `http://localhost:3000`:
 npm run dev
 ```
 
+## Database migrations
+#### Production
+To apply the migrations in staging or production, you can run the server using ``npx nuxi dev --remote`` command to connect your local server to the remote database, learn more about [remote storage](https://hub.nuxt.com/docs/getting-started/remote-storage).
+
+#### Local development
+On local development migrations will be executed automatically see: y``/server/plugins/migrations.ts`` 
+
 ## How to contribute
 Keep My Wife’s Name Out Of Your F***ing mouth 👋
 
