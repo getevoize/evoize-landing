@@ -13,8 +13,12 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
+    "@nuxthub/core": "^0.7.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.12.3",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "wrangler": "^3.66.0"
   }
 }
