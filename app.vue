@@ -1,5 +1,25 @@
 <script setup lang="ts">
 
+useHead({title: 'evoize - Open-Source Invoicing made simple'})
+
+const email = ref('')
+
+const joinWaitlist = async  () => {
+
+
+  try {
+    const response = await $fetch('api/join-waitlist', {
+      method: 'POST', body: {
+        email: email.value,
+      }
+    })
+
+    alert("Successfully joined.")
+    email.value = ''
+  } catch (error) {
+    console.error("ERROR WHILE JOINING WAITLIST....")
+  }
+}
 
 </script>
 
@@ -18,9 +38,9 @@
             Zukunft.</h1>
 
           <div class="mt-10">
-            <form>
+            <form @submit.prevent="joinWaitlist">
               <div class="mx-auto flex max-w-sm items-center rounded-full bg-gray-50 justify-between px-4 py-2 gap-2">
-                <input type="email" class="flex-1 px-3 py-2" placeholder="E-Mail Address">
+                <input type="email" class="flex-1 px-3 py-2" placeholder="E-Mail Address" required v-model="email">
                 <button type="submit"
                         class="bg-[#2A2A2A] border-2 border-black shadow text-white rounded-full px-2 py-1">Join
                   Waitlist

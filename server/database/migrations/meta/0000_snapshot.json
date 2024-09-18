@@ -1,0 +1,62 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "76ce1ec7-a7a7-40e1-bd36-6caae12d2748",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "waitlist": {
+      "name": "waitlist",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "waitlist_email_unique": {
+          "name": "waitlist_email_unique",
+          "columns": [
+            "email"
+          ],
+          "isUnique": true
+        },
+        "email_idx": {
+          "name": "email_idx",
+          "columns": [
+            "email"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}
