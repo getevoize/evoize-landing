@@ -9,12 +9,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
+    "@nuxthub/core": "^0.7.19",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "drizzle-orm": "^0.33.0",
+    "h3-zod": "^0.5.3",
     "nuxt": "^3.12.3",
-    "vue": "latest"
+    "vue": "latest",
+    "zod": "^3.23.8"
   }
 }
