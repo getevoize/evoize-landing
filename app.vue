@@ -20,22 +20,22 @@
         Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
       </h2>
 
-      <div class="mt-10 border border-gray-300 rounded-[3rem] p-8 bg-[#F7FCFE] flex flex-col lg:flex-row justify-between gap space-x-8 space-y-8 lg:space-y-0">
-          <img src="https://placehold.co/600x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
+      <div class="mt-10 border border-gray-300 rounded-[3rem] p-12 bg-[#F7FCFE] flex flex-col lg:flex-row justify-between gap space-x-8 space-y-8 lg:space-y-0">
+          <img src="https://placehold.co/500x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
           <div class="flex flex-col justify-center space-y-2">
             <p class="text-gray-600 text-xl font-semibold">Leichtes Rechnung erstellen</p>
-            <h2 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h2>
+            <h3 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h3>
             <p class="text-gray-800">Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.</p>
           </div>
       </div>
 
-      <div class="mt-10 border border-gray-300 rounded-[3rem] p-8 bg-[#F7FCFE] flex flex-col lg:flex-row justify-between gap space-x-8 space-y-8 lg:space-y-0">
+      <div class="mt-10 border border-gray-300 rounded-[3rem] p-12 bg-[#F7FCFE] flex flex-col lg:flex-row-reverse justify-between gap space-x-8 space-y-8 lg:space-y-0">
+        <img src="https://placehold.co/500x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
         <div class="flex flex-col justify-center space-y-2">
           <p class="text-gray-600 text-xl font-semibold">Leichtes Rechnung erstellen</p>
-          <h2 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h2>
+          <h3 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h3>
           <p class="text-gray-800">Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.</p>
         </div>
-        <img src="https://placehold.co/600x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
       </div>
 
     </section>
@@ -45,16 +45,28 @@
         Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
       </h2>
 
-      <div class="mt-10 border border-gray-300 rounded-[3rem] p-8 bg-[#F7FCFE] flex flex-col lg:flex-row justify-between gap space-x-8 space-y-8 lg:space-y-0">
-        <img src="https://placehold.co/600x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
+      <div class="mt-10 border border-gray-300 rounded-[3rem] p-12 bg-[#F7FCFE] flex flex-col lg:flex-row justify-between gap space-x-8 space-y-8 lg:space-y-0">
+        <img src="https://placehold.co/500x400" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 ">
         <div class="flex flex-col justify-center space-y-2">
           <p class="text-gray-600 text-xl font-semibold">Leichtes Rechnung erstellen</p>
-          <h2 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h2>
+          <h3 class="font-bold text-5xl text-blue-500">Rechungen erstellen leicht gemacht</h3>
           <p class="text-gray-800">Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.</p>
         </div>
       </div>
     </section>
 
+    <section class="px-4 max-w-3xl mx-auto mt-20 space-y-8">
+      <h2 class="text-6xl font-bold text-gray-600 text-center">
+        Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
+      </h2>
+      <p class="text-gray-600 text-xl text-center">Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.</p>
+
+      <div class="border bg-white rounded-[3rem] items-center p-8 flex flex-col justify-center space-y-8">
+        <img src="https://placehold.co/400x300" class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20 mt-8">
+        <h3 class="font-bold text-5xl text-blue-500">Das Open Source Invoice Tool</h3>
+        <p class="text-gray-600 text-2xl font-semibold">Ideal für Freelancer und kleine Unternehmen die eine anpassbare und</p>
+      </div>
+    </section>
 
   </div>
 </template>
