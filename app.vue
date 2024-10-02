@@ -3,7 +3,7 @@
     <Navigation></Navigation>
 
     <HeaderBackground></HeaderBackground>
-    <header class="flex flex-col min-h-screen mx-auto px-0 sm:px-8 container">
+    <header class="flex flex-col mx-auto px-0 sm:px-8 container">
         <PageTeaser></PageTeaser>
         <div class="mt-20 xl:flex">
           <PreviewCard class="xl:translate-x-1/3 rotate-12" :content=contentCard1 main-color="#ffbb37"
@@ -15,7 +15,7 @@
         </div>
     </header>
 
-    <section class="px-4 max-w-7xl mx-auto mt-40">
+    <section class="px-4 max-w-7xl mx-auto mt-52">
       <h2 class="text-4xl font-bold text-blue-500 max-w-xl">
         Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
       </h2>
@@ -70,21 +70,21 @@
 
     <section class="bg-white p-8 mb-40">
 
-      <div class="mt-20 from-[#EAF4FD] to-[#C4EBFD] bg-gradient-to-b  rounded-[3rem] items-center p-8 flex flex-col justify-center ">
+      <div class="mt-20 from-[#EAF4FD] to-[#C4EBFD] bg-gradient-to-b  rounded-[3rem] items-center p-8 flex flex-col justify-center mx-auto max-w-7xl ">
         <h2 class="mt-20 text-5xl font-bold text-gray-600 text-center max-w-3xl">Das Open Source Invoice Tool  für Freelancer und kleine Unternehmen</h2>
 
-        <div class="flex space-x-8 mt-8 translate-y-20">
-          <div class="border rounded-lg bg-white flex flex-col p-8 max-w-sm shadow-xl space-y-8">
+        <div class="flex space-x-4 sm:space-x-8 mt-8 translate-y-20 ">
+          <div class="border rounded-xl bg-white flex flex-col p-8 max-w-xs shadow-xl space-y-8">
             <h4 class="text-blue-500 font-semibold text-xl">Free</h4>
             <p class="text-gray-800">Das Open Source Invoice Tool  für Freelancer und kleine Unternehmen</p>
           </div>
 
-          <div class="border rounded-lg bg-white flex flex-col p-8 max-w-sm shadow-xl space-y-8 -my-12">
+          <div class="border rounded-xl bg-white flex flex-col p-8 max-w-xs shadow-xl space-y-8 -my-12">
             <h4 class="text-blue-500 font-semibold text-xl">139.99</h4>
             <p class="text-gray-800">Das Open Source Invoice Tool  für Freelancer und kleine Unternehmen</p>
           </div>
 
-          <div class="border rounded-lg bg-white flex flex-col p-8 max-w-sm shadow-xl space-y-8">
+          <div class="border rounded-xl bg-white flex flex-col p-8 max-w-xs shadow-xl space-y-8">
             <h4 class="text-blue-500 font-semibold text-xl">39.99</h4>
             <p class="text-gray-800">Das Open Source Invoice Tool  für Freelancer und kleine Unternehmen</p>
           </div>
