@@ -51,13 +51,7 @@ export interface PreviewCardContent {
 
 defineProps<{
   content: PreviewCardContent;
-  mainColor: {
-    type: String;
-    required: true;
-  };
-  secondaryColor: {
-    type: String;
-    required: true;
-  };
+  mainColor: string;
+  secondaryColor: string;
 }>();
 </script>

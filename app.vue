@@ -31,150 +31,48 @@
       <SectionTitle
         title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
       />
-
-      <div
-        class="gap mt-10 flex flex-col justify-between space-x-8 space-y-8 rounded-[3rem] border border-gray-300 bg-[#F7FCFE] p-12 lg:flex-row lg:space-y-0"
-      >
-        <img
-          src="https://placehold.co/500x400"
-          class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20"
-        />
-        <div class="flex flex-col justify-center space-y-2">
-          <p class="text-xl font-semibold text-gray-600">
-            Leichtes Rechnung erstellen
-          </p>
-          <h3 class="text-5xl font-bold text-blue-500">
-            Rechungen erstellen leicht gemacht
-          </h3>
-          <p class="text-gray-800">
-            Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
+      <FeatureHighlight
+        eyebrow="Leichtes Rechnung erstellen"
+        title="Rechungen erstellen leicht gemacht"
+        content="Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
             Rechnungen zu generieren und sofort an Kunden zu senden. Dies
-            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="gap mt-10 flex flex-col justify-between space-x-8 space-y-8 rounded-[3rem] border border-gray-300 bg-[#F7FCFE] p-12 lg:flex-row-reverse lg:space-y-0"
+            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow."
+        image-src="https://placehold.co/500x400"
       >
-        <img
-          src="https://placehold.co/500x400"
-          class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20"
-        />
-        <div class="flex flex-col justify-center space-y-2">
-          <p class="text-xl font-semibold text-gray-600">
-            Leichtes Rechnung erstellen
-          </p>
-          <h3 class="text-5xl font-bold text-blue-500">
-            Rechungen erstellen leicht gemacht
-          </h3>
-          <p class="text-gray-800">
-            Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
+      </FeatureHighlight>
+      <FeatureHighlight
+        eyebrow="Leichtes Rechnung erstellen"
+        title="Rechungen erstellen leicht gemacht"
+        content="Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
             Rechnungen zu generieren und sofort an Kunden zu senden. Dies
-            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.
-          </p>
-        </div>
-      </div>
+            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow."
+        image-src="https://placehold.co/500x400"
+        reverse
+      >
+      </FeatureHighlight>
     </section>
 
     <section class="mx-auto mt-20 max-w-7xl px-4">
       <SectionTitle
         title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
       />
-
-      <div
-        class="gap mt-10 flex flex-col justify-between space-x-8 space-y-8 rounded-[3rem] border border-gray-300 bg-[#F7FCFE] p-12 lg:flex-row lg:space-y-0"
-      >
-        <img
-          src="https://placehold.co/500x400"
-          class="rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20"
-        />
-        <div class="flex flex-col justify-center space-y-2">
-          <p class="text-xl font-semibold text-gray-600">
-            Leichtes Rechnung erstellen
-          </p>
-          <h3 class="text-5xl font-bold text-blue-500">
-            Rechungen erstellen leicht gemacht
-          </h3>
-          <p class="text-gray-800">
-            Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
+      <FeatureHighlight
+        eyebrow="Leichtes Rechnung erstellen"
+        title="Rechungen erstellen leicht gemacht"
+        content="Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
             Rechnungen zu generieren und sofort an Kunden zu senden. Dies
-            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mx-auto mb-40 mt-20 max-w-3xl space-y-8 px-4">
-      <SectionTitle
-        title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
-      />
-
-      <p class="text-center text-xl text-gray-600">
-        Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv
-        Rechnungen zu generieren und sofort an Kunden zu senden. Dies
-        beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.
-      </p>
-
-      <div
-        class="flex flex-col items-center justify-center space-y-8 rounded-[3rem] border bg-white p-8 shadow-xl"
+            beschleunigt den Zahlungseingang und verbessert Ihren Cashflow."
+        image-src="https://placehold.co/500x400"
       >
-        <img
-          src="https://placehold.co/400x300"
-          class="mt-8 rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20"
-        />
-        <h3 class="text-5xl font-bold text-blue-500">
-          Das Open Source Invoice Tool
-        </h3>
-        <p class="text-2xl font-semibold text-gray-600">
-          Ideal für Freelancer und kleine Unternehmen die eine anpassbare und
-        </p>
-      </div>
+      </FeatureHighlight>
     </section>
 
-    <section class="mb-40 bg-white p-8">
-      <div
-        class="mx-auto mt-20 flex max-w-7xl flex-col items-center justify-center rounded-[3rem] bg-gradient-to-b from-[#EAF4FD] to-[#C4EBFD] p-8"
-      >
-        <h2
-          class="mt-20 max-w-3xl text-center text-5xl font-bold text-gray-600"
-        >
-          Das Open Source Invoice Tool  für Freelancer und kleine Unternehmen
-        </h2>
+    <PromoSection></PromoSection>
 
-        <div class="mt-8 flex translate-y-20 space-x-4 sm:space-x-8">
-          <div
-            class="flex max-w-xs flex-col space-y-8 rounded-xl border bg-white p-8 shadow-xl"
-          >
-            <h4 class="text-xl font-semibold text-blue-500">Free</h4>
-            <p class="text-gray-800">
-              Das Open Source Invoice Tool  für Freelancer und kleine
-              Unternehmen
-            </p>
-          </div>
-
-          <div
-            class="-my-12 flex max-w-xs flex-col space-y-8 rounded-xl border bg-white p-8 shadow-xl"
-          >
-            <h4 class="text-xl font-semibold text-blue-500">139.99</h4>
-            <p class="text-gray-800">
-              Das Open Source Invoice Tool  für Freelancer und kleine
-              Unternehmen
-            </p>
-          </div>
-
-          <div
-            class="flex max-w-xs flex-col space-y-8 rounded-xl border bg-white p-8 shadow-xl"
-          >
-            <h4 class="text-xl font-semibold text-blue-500">39.99</h4>
-            <p class="text-gray-800">
-              Das Open Source Invoice Tool  für Freelancer und kleine
-              Unternehmen
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <PricingSection
+      title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
+      :pricingOptions="pricingOptions"
+    />
   </div>
 </template>
 
@@ -183,6 +81,8 @@ import PreviewCard, { PreviewCardContent } from "~/components/PreviewCard.vue";
 import Navigation from "~/components/Navigation.vue";
 import PageTeaser from "~/components/PageTeaser.vue";
 import HeaderBackground from "~/components/HeaderBackground.vue";
+import FeatureHighlight from "~/components/FeatureHighlight.vue";
+import PromoSection from "~/components/PromoSection.vue";
 
 const contentCard1: PreviewCardContent = {
   text: "Hubspot API implementation",
@@ -204,4 +104,25 @@ const contentCard3: PreviewCardContent = {
   value2: "8.900€",
   progress: "62%",
 };
+
+const pricingOptions = ref([
+  {
+    price: "Free",
+    description:
+      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen",
+    highlighted: false,
+  },
+  {
+    price: "139.99",
+    description:
+      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen",
+    highlighted: true,
+  },
+  {
+    price: "39.99",
+    description:
+      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen",
+    highlighted: false,
+  },
+]);
 </script>
