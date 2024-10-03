@@ -1,3 +1,5 @@
 <template>
-  <div class="absolute w-full bg-[#EBF4FD] z-0 sm:inset-8 sm:w-[calc(100%-4rem)] sm:h-[800px] sm:rounded-2xl"></div>
+  <div
+    class="absolute z-0 w-full bg-[#EBF4FD] sm:inset-8 sm:h-[800px] sm:w-[calc(100%-4rem)] sm:rounded-2xl"
+  ></div>
 </template>

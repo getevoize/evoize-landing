@@ -1,6 +1,11 @@
 <template>
   <nav
-      class="z-50 shadow-xl sticky top-7 px-5 py-4 border-2 border-white max-w-xl mx-2 sm:mx-auto rounded-full from-[#E5F5FF] to-[#FFFFFF] bg-gradient-to-r ">
-    <p class="font-titan font-semibold lg:font-bold text-lg text-black tracking-wider leading-none">evoize</p>
+    class="sticky top-7 z-50 mx-2 max-w-xl rounded-full border-2 border-white bg-gradient-to-r from-[#E5F5FF] to-[#FFFFFF] px-5 py-4 shadow-xl sm:mx-auto"
+  >
+    <p
+      class="font-titan text-lg font-semibold leading-none tracking-wider text-black lg:font-bold"
+    >
+      evoize
+    </p>
   </nav>
 </template>

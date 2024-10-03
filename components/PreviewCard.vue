@@ -1,22 +1,42 @@
 <template>
   <div
-      class="z-10 relative mx-auto max-w-sm bg-white shadow-lg border-2 border-[#A0CEFC] shadow-blue-300 rounded-[2rem] px-10 py-4 text-center"
-      :style="{ color: mainColor }"
+    class="relative z-10 mx-auto max-w-sm rounded-[2rem] border-2 border-[#A0CEFC] bg-white px-10 py-4 text-center shadow-lg shadow-blue-300"
+    :style="{ color: mainColor }"
   >
-    <div class="-my-4 absolute w-[1px] h-full opacity-20" :style="{ backgroundColor: mainColor }"></div>
+    <div
+      class="absolute -my-4 h-full w-[1px] opacity-20"
+      :style="{ backgroundColor: mainColor }"
+    ></div>
     <div>
-      <p class="mt-2 ml-4 truncate font-titan font-semibold tracking-wide text-3xl">{{ content.text }}</p>
+      <p
+        class="ml-4 mt-2 truncate font-titan text-3xl font-semibold tracking-wide"
+      >
+        {{ content.text }}
+      </p>
     </div>
 
-    <div class="absolute mt-4 left-0 right-0 h-[1px] opacity-20" :style="{ backgroundColor: mainColor }"></div>
+    <div
+      class="absolute left-0 right-0 mt-4 h-[1px] opacity-20"
+      :style="{ backgroundColor: mainColor }"
+    ></div>
 
-    <div class="mt-10 ml-4">
-      <p class="font-semibold text-4xl ">{{ content.value1 }}/<span class="opacity-60">{{ content.value2 }}</span></p>
+    <div class="ml-4 mt-10">
+      <p class="text-4xl font-semibold">
+        {{ content.value1 }}/<span class="opacity-60">{{
+          content.value2
+        }}</span>
+      </p>
     </div>
 
-    <div class="mt-4 ml-4 rounded-full w-full h-20 p-2 flex items-center justify-between" :style="{ backgroundColor: secondaryColor }">
-      <div class="rounded-full h-full" :style="{ backgroundColor: mainColor, width: content.progress }"></div>
-      <p class="font-bold text-4xl">{{ content.progress }}</p>
+    <div
+      class="ml-4 mt-4 flex h-20 w-full items-center justify-between rounded-full p-2"
+      :style="{ backgroundColor: secondaryColor }"
+    >
+      <div
+        class="h-full rounded-full"
+        :style="{ backgroundColor: mainColor, width: content.progress }"
+      ></div>
+      <p class="text-4xl font-bold">{{ content.progress }}</p>
     </div>
   </div>
 </template>
@@ -30,14 +50,14 @@ export interface PreviewCardContent {
 }
 
 defineProps<{
-  content: PreviewCardContent
+  content: PreviewCardContent;
   mainColor: {
-    type: String,
-    required: true
-  }
+    type: String;
+    required: true;
+  };
   secondaryColor: {
-    type: String,
-    required: true
-  }
+    type: String;
+    required: true;
+  };
 }>();
 </script>
