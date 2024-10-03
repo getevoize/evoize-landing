@@ -16,6 +16,7 @@
       class="flex flex-col items-center justify-center space-y-8 rounded-[3rem] border bg-white p-8 shadow-xl"
     >
       <img
+        alt="Das Open Source Invoice Tool"
         src="https://placehold.co/400x300"
         class="mt-8 rounded-[3rem] border-4 border-[#95BAFC] border-opacity-20"
       />
