@@ -3,9 +3,9 @@
     class="flex max-w-xs flex-col space-y-8 rounded-xl border bg-white p-8 shadow-xl"
     :class="highlighted ? '-my-12' : ''"
   >
-    <h4 class="text-xl font-semibold text-blue-500">Free</h4>
+    <h4 class="text-xl font-semibold text-blue-500">{{ price }}</h4>
     <p class="text-gray-800">
-      Das Open Source Invoice Tool für Freelancer und kleine Unternehmen
+      {{ description }}
     </p>
   </div>
 </template>
@@ -15,5 +15,7 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  price: String,
+  description: String,
 });
 </script>

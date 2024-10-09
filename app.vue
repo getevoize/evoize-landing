@@ -29,6 +29,7 @@
 
     <section class="mx-auto mt-20 max-w-7xl px-8 lg:mt-52">
       <SectionTitle
+        id="highlight"
         title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
       />
       <FeatureHighlight
@@ -54,6 +55,7 @@
 
     <section class="mx-auto mt-20 max-w-7xl px-4">
       <SectionTitle
+        id="highlight2"
         title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
       />
       <FeatureHighlight
@@ -70,6 +72,7 @@
     <PromoSection></PromoSection>
 
     <PricingSection
+      id="pricing"
       title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
       :pricingOptions="pricingOptions"
     />
@@ -113,15 +116,15 @@ const pricingOptions = ref([
     highlighted: false,
   },
   {
-    price: "139.99",
+    price: "139.99€",
     description:
-      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen",
+      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen 2",
     highlighted: true,
   },
   {
-    price: "39.99",
+    price: "39.99€",
     description:
-      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen",
+      "Das Open Source Invoice Tool für Freelancer und kleine Unternehmen 3",
     highlighted: false,
   },
 ]);
