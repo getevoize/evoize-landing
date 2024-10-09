@@ -1,5 +1,5 @@
 <template>
-	<div class="relative bg-gradient-to-t from-[#DBF1FE] to-[#FFFFFF] ">
+	<div class="relative bg-gradient-to-t from-[#DBF1FE] to-[#FFFFFF]">
 		<AppNavigation />
 
 		<HeaderBackground />
@@ -27,9 +27,11 @@
 			</div>
 		</header>
 
-		<section class="mx-auto mt-20 max-w-7xl px-8 lg:mt-52">
+		<section
+			id="highlight"
+			class="mx-auto mt-20 max-w-7xl px-8 lg:mt-52"
+		>
 			<SectionTitle
-				id="highlight"
 				title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
 			/>
 			<FeatureHighlight
@@ -51,9 +53,11 @@
 			/>
 		</section>
 
-		<section class="mx-auto mt-20 max-w-7xl px-4">
+		<section
+			id="highlight2"
+			class="mx-auto mt-20 max-w-7xl px-4"
+		>
 			<SectionTitle
-				id="highlight2"
 				title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
 			/>
 			<FeatureHighlight
@@ -127,3 +131,9 @@ const pricingOptions = ref([
 	},
 ])
 </script>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
