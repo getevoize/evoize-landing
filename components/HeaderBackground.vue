@@ -4,8 +4,8 @@
   >
 
   </div>
-  <div class="top-[8%] right-0 bg-shape-1 bg-blue-300 opacity-50 blur-3xl overflow-hidden "></div>
-  <div class="top-[8%] right-[40%] bg-shape-1 bg-blue-300 opacity-50 blur-3xl overflow-hidden "></div>
+<!--  <div class="top-[8%] right-0 bg-shape-1 bg-blue-300 opacity-50 blur-3xl overflow-hidden "></div>-->
+<!--  <div class="top-[8%] right-[40%] bg-shape-1 bg-blue-300 opacity-50 blur-3xl overflow-hidden "></div>-->
 
 </template>
 <style scoped>
