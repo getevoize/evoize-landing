@@ -17,6 +17,10 @@ export default {
 				],
 				titan: ['"Titan One"', 'sans-serif'],
 			},
+			borderRadius: {
+				'4xl': '2rem',
+				'5xl': '3rem',
+			},
 		},
 	},
 	plugins: [],

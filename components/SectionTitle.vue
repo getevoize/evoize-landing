@@ -15,17 +15,15 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-	title: String,
-	color: String,
-	align: {
-		type: String,
-		default: 'left',
-		validator: (value: string) => ['left', 'center', 'right'].includes(value),
-	},
-	colorClass: {
-		type: String,
-		default: 'text-blue-500',
-	},
+interface Props {
+	title: string
+	color: string
+	align: 'left' | 'center' | 'right'
+	colorClass: string
+}
+
+withDefaults(defineProps<Props>(), {
+	align: 'left',
+	colorClass: 'text-blue-500',
 })
 </script>

@@ -13,7 +13,7 @@
 		</p>
 
 		<div
-			class="flex flex-col items-center justify-center space-y-8 rounded-[3rem] border bg-white p-8 shadow-xl"
+			class="flex flex-col items-center justify-center space-y-8 rounded-5xl border bg-white p-8 shadow-xl"
 		>
 			<img
 				alt="Das Open Source Invoice Tool"
