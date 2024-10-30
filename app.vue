@@ -6,15 +6,15 @@
 		<HeroSection :preview-cards="previewCards" />
 
 		<FeatureSection
+			id="highlight"
 			class="lg:mt-52"
 			title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
-      id="highlight"
 			:feature-highlights="featureHighlights"
 		/>
 
 		<FeatureSection
+			id="highlight2"
 			title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
-      id="highlight2"
 			:feature-highlights="featureHighlights2"
 		/>
 
