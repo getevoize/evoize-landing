@@ -4,7 +4,7 @@
 		:class="highlighted ? '-my-12' : ''"
 	>
 		<h4 class="text-xl font-semibold text-blue-500">
-			{{ price }}
+			{{ title }}
 		</h4>
 		<p class="text-gray-800">
 			{{ description }}
@@ -18,7 +18,7 @@ defineProps({
 		type: Boolean,
 		default: false,
 	},
-	price: String,
+	title: String,
 	description: String,
 })
 </script>

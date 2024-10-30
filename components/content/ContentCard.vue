@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-export interface FeatureHighlightProps {
+export interface ContentCardProps {
 	imageSrc: string
 	eyebrow: string
 	title: string
@@ -31,7 +31,7 @@ export interface FeatureHighlightProps {
 	reverse: boolean
 }
 
-withDefaults(defineProps<FeatureHighlightProps>(), {
+withDefaults(defineProps<ContentCardProps>(), {
 	reverse: false,
 })
 </script>

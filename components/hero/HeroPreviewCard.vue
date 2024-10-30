@@ -55,7 +55,7 @@ interface PreviewCardContent {
 	progress: string
 }
 
-export interface PreviewCardProps {
+export interface HeroPreviewCardProps {
 	content: PreviewCardContent
 	mainColor: string
 	secondaryColor: string
@@ -63,6 +63,6 @@ export interface PreviewCardProps {
 }
 
 defineProps<{
-	card: PreviewCardProps
+	card: HeroPreviewCardProps
 }>()
 </script>

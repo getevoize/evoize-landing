@@ -8,10 +8,10 @@
 			</h2>
 
 			<div class="mt-8 flex translate-y-20 space-x-4 sm:space-x-8">
-				<PricingCard
+				<ContentTile
 					v-for="(option, index) in pricingOptions"
 					:key="index"
-					:price="option.price"
+					:title="option.price"
 					:description="option.description"
 					:highlighted="option.highlighted"
 				/>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import PricingCard from './PricingCard.vue'
+import ContentTile from '../content/ContentTile.vue'
 
 defineProps({
 	title: {

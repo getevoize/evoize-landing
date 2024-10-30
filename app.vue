@@ -2,55 +2,23 @@
 	<div class="relative bg-gradient-to-t from-[#DBF1FE] to-[#FFFFFF]">
 		<AppNavigation />
 
-		<HeaderBackground />
-		<header class="container mx-auto flex flex-col px-0 sm:px-8">
-			<PageTeaser />
-			<div class="mt-20 flex flex-col lg:flex-row">
-				<PreviewCard
-					v-for="(card, index) in previewCards"
-					:key="index"
-					:card="card"
-				/>
-			</div>
-		</header>
+		<HeroBackground />
+		<HeroSection :preview-cards="previewCards" />
 
-		<section
-			id="highlight"
-			class="mx-auto mt-20 max-w-7xl px-8 lg:mt-52"
-		>
-			<SectionTitle
-				title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
-			/>
-			<FeatureHighlight
-				v-for="(highlight, index) in featureHighlights"
-				:key="`${index}_highlight`"
-				:eyebrow="highlight.eyebrow"
-				:title="highlight.title"
-				:content="highlight.content"
-				:image-src="highlight.imageSrc"
-				:reverse="highlight.reverse"
-			/>
-		</section>
+		<FeatureSection
+			class="lg:mt-52"
+			title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
+			:feature-highlights="featureHighlights"
+		/>
 
-		<section
-			id="highlight2"
-			class="mx-auto mt-20 max-w-7xl px-4"
-		>
-			<SectionTitle
-				title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
-			/>
-			<FeatureHighlight
-				v-for="(highlight, index) in featureHighlights.splice(1)"
-				:key="`${index}_highlight2`"
-				:eyebrow="highlight.eyebrow"
-				:title="highlight.title"
-				:content="highlight.content"
-				:image-src="highlight.imageSrc"
-				:reverse="highlight.reverse"
-			/>
-		</section>
+		<FeatureSection
+			title="Das Open Source Invoice Tool für Freelancer und kleine Unternehmen"
+			:feature-highlights="featureHighlights2"
+		/>
 
-		<PromoSection />
+		<PromoSection
+			v-bind="promoCardProps"
+		/>
 
 		<PricingSection
 			id="pricing"
@@ -61,18 +29,18 @@
 </template>
 
 <script setup lang="ts">
-import type { PreviewCardProps } from '~/components/PreviewCard.vue'
-import PreviewCard from '~/components/PreviewCard.vue'
-import AppNavigation from '~/components/AppNavigation.vue'
-import PageTeaser from '~/components/PageTeaser.vue'
-import HeaderBackground from '~/components/HeaderBackground.vue'
-import type {
-	FeatureHighlightProps,
-} from '~/components/FeatureHighlight.vue'
-import FeatureHighlight from '~/components/FeatureHighlight.vue'
-import PromoSection from '~/components/PromoSection.vue'
+import type { HeroPreviewCardProps } from '~/components/hero/HeroPreviewCard.vue'
+import type { ContentCardProps } from '~/components/content/ContentCard.vue'
 
-const previewCards: PreviewCardProps[] = [
+import AppNavigation from '~/components/base/AppNavigation.vue'
+import HeroBackground from '~/components/hero/HeroBackground.vue'
+import type { PromoSectionProps } from '~/components/sections/PromoSection.vue'
+import PromoSection from '~/components/sections/PromoSection.vue'
+import HeroSection from '~/components/hero/HeroSection.vue'
+import FeatureSection from '~/components/sections/FeatureSection.vue'
+import PricingSection from '~/components/sections/PricingSection.vue'
+
+const previewCards: HeroPreviewCardProps[] = [
 	{
 		content: {
 			text: 'Hubspot API implementation',
@@ -108,19 +76,31 @@ const previewCards: PreviewCardProps[] = [
 	},
 ]
 
-const featureHighlights: FeatureHighlightProps[] = [
+const featureHighlights: ContentCardProps[] = [
 	{
 		eyebrow: 'Leichtes Rechnung erstellen',
 		title: 'Rechungen erstellen leicht gemacht',
-		content: 'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
+		content:
+      'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
 		imageSrc: 'https://placehold.co/500x400',
 	},
 	{
 		eyebrow: 'Leichtes Rechnung erstellen',
 		title: 'Rechungen erstellen leicht gemacht',
-		content: 'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
+		content:
+      'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
 		imageSrc: 'https://placehold.co/500x400',
 		reverse: true,
+	},
+]
+
+const featureHighlights2: ContentCardProps[] = [
+	{
+		eyebrow: 'Leichtes Rechnung erstellen',
+		title: 'Rechungen erstellen leicht gemacht',
+		content:
+      'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
+		imageSrc: 'https://placehold.co/500x400',
 	},
 ]
 
@@ -144,6 +124,17 @@ const pricingOptions = ref([
 		highlighted: false,
 	},
 ])
+
+const promoCardProps: PromoSectionProps = {
+	title: 'Das Open Source Invoice Tool für Freelancer und kleine Unternehmen',
+	subText:
+    'Unser Rechnungsprogramm ermöglicht es Ihnen, schnell und effektiv Rechnungen zu generieren und sofort an Kunden zu senden. Dies beschleunigt den Zahlungseingang und verbessert Ihren Cashflow.',
+	promoContent: {
+		title: 'Das Open Source Invoice Tool',
+		content:
+      'Ideal für Freelancer und kleine Unternehmen die eine anpassbare und',
+	},
+}
 </script>
 
 <style>
